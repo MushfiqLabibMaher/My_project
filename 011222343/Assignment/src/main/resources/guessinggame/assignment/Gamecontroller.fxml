@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guessinggame.assignment.Gamecontroller">
+   <children>
+      <Text fx:id="nametext" layoutX="34.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name :" wrappingWidth="181.00537109375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="namefield" layoutX="160.0" layoutY="29.0" prefHeight="27.0" prefWidth="181.0" promptText="Type Your Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Circle fx:id="b1" fill="#1ff076" layoutX="120.0" layoutY="332.0" onMouseClicked="#b1clicked" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="b2" fill="#1ff076" layoutX="295.0" layoutY="332.0" onMouseClicked="#b2clicked" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="b3" fill="#1ff076" layoutX="481.0" layoutY="332.0" onMouseClicked="#b3clicked" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fx:id="attemptstext" layoutX="359.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attempt Left :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="genaratetext" layoutX="108.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press the Button to Genarate the Number">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="namebutton" layoutX="220.0" layoutY="84.0" mnemonicParsing="false" onAction="#namesave" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="genaretedbutton" layoutX="266.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#genaratedclick" text="Number" textFill="#ff0202">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="Label1" alignment="CENTER" layoutX="14.0" layoutY="235.0" prefHeight="20.0" prefWidth="574.0" textFill="#f51616">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="attemptcount" alignment="TOP_LEFT" layoutX="492.0" layoutY="31.0" prefHeight="30.0" prefWidth="51.0" text="2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

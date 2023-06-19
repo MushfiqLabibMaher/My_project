@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guessinggame.assignment.END">
+   <children>
+      <Label fx:id="Label2" alignment="CENTER" layoutX="107.0" layoutY="179.0" prefHeight="43.0" prefWidth="386.0" textFill="#f23030">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
